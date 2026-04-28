@@ -33,3 +33,7 @@ Compute BLAKE3 attestation hashes for release artifacts (files or directory tree
 ## Directory hashing
 
 For directory artifacts, the hash is computed by sorting paths, hashing each as `<rel-path>\0<bytes>`, and finalizing — matches forge's directory hashing convention.
+
+## Part of the pleme-io action library
+
+This action is one of 11 in [`pleme-io/pleme-actions`](https://github.com/pleme-io/pleme-actions) — discovery hub, version compat matrix, contributing guide, and reusable SDLC workflows shared across the library.
