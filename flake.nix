@@ -2,10 +2,10 @@
   description = "pleme-io/tameshi-attest — BLAKE3 source/build/artifact attestation for a release";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.follows = "substrate/nixpkgs";
     crate2nix = { url = "github:nix-community/crate2nix"; inputs.nixpkgs.follows = "nixpkgs"; };
     flake-utils.url = "github:numtide/flake-utils";
-    substrate = { url = "github:pleme-io/substrate"; inputs.nixpkgs.follows = "nixpkgs"; };
+    substrate = { url = "github:pleme-io/substrate";};
   };
 
   outputs = inputs @ { self, nixpkgs, crate2nix, flake-utils, substrate, ... }:
